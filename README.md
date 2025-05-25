@@ -1,5 +1,3 @@
-# mysql-learning-journey-for-data-engineers
-
 # 🐬 20 Days of MySQL – Learning Journey for Data Engineers & Data Analysts
 
 Welcome to my 20-day journey of mastering **MySQL** with a practical focus on real-world use cases for **Data Engineers** and **Data Analysts**.
