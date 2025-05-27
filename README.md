@@ -52,6 +52,4 @@ Each day has:
 
 ⭐ If you find this helpful, give it a star ⭐ and follow for more data content!
 
----
 
-⭐ If you find this helpful, give it a star and follow for more data content!
