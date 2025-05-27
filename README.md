@@ -4,12 +4,7 @@ Welcome to my 20-day journey of mastering **MySQL** with a practical focus on re
 
 This repository contains **daily structured notes**, **SQL queries**, **practice tasks**, and **explained examples**—from beginner to advanced level.
 
-# 📘 20-Day MySQL Learning Journey for Data Engineers & Data Analysts
-
-Welcome to the **20-Day MySQL Learning Journey**! This curated path is designed for aspiring **Data Engineers** and **Data Analysts** to build a strong foundation in MySQL, explore real-world data practices, and integrate SQL knowledge into modern data ecosystems.
-
 ---
-
 ## 🚀 Journey Outline
 
 ### ✅ Day 1: Introduction & Basics of MySQL
@@ -17,7 +12,7 @@ Welcome to the **20-Day MySQL Learning Journey**! This curated path is designed 
 **Practice:**
 - Create a database and table (e.g., `customers`)
 - Insert rows and query using `SELECT`, `WHERE`
-
+- 
 ---
 
 ### ✅ Day 2: Filtering, Sorting, Aggregations
@@ -201,7 +196,7 @@ Each day has:
 
 ## 📬 Contact
 Created by: Manish Kumar  
-Contact: [manishprajapat01997@gmail.com]  
+Contact: manishprajapat01997@gmail.com  
 License: MIT
 
 ---
