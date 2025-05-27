@@ -1,18 +1,20 @@
-# Day 5 – Tasks & Challenges
+# 📘 Day 5 Tasks: Window Functions
 
-## Task 1: Clean Customer Data
-- Find customers with empty/null names
-- Trim whitespace from names
-- Convert all emails to lowercase
+### ✅ 1. Rank customers by total purchase amount
+- Use RANK() OVER with SUM(amount)
+- Group by customer_id
 
-## Task 2: Email Domain Report
-- Extract email domains
-- Group by domain and count users
-- Show top 3 most common domains
+### ✅ 2. Calculate running total of sales by order_date
+- Use SUM() OVER (ORDER BY order_date)
 
-## Task 3: Clean Product Names
-- Replace `_` with space in product names
-- Format product names to Title Case using substring logic
+### ✅ 3. Assign a row number to each order by customer
+- Use ROW_NUMBER() OVER (PARTITION BY customer_id ORDER BY amount DESC)
 
-## Bonus Challenge:
-Find duplicate email addresses in the customer table.
+### ✅ 4. Divide orders into 4 quartiles by amount
+- Use NTILE(4) OVER (ORDER BY amount DESC)
+
+---
+
+🎯 Bonus:
+- Use DENSE_RANK and compare with RANK()
+- Combine ROW_NUMBER and filtering (e.g., top 1 order per customer)
