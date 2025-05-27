@@ -1,45 +1,19 @@
-📝 Day 6 Task
-Write a query to show total quantity of each product ordered, sorted by highest.
+# 📘 Day 6 Tasks: Data Modeling & Schema Design
 
-Show list of customers with their total amount spent (use join + aggregation).
+### ✅ 1. Normalize a flat sales table into 3NF
+- Separate customer, product, and order data into individual tables
+- Define proper primary and foreign keys
 
-Show all products that have never been ordered.
+### ✅ 2. Create Indexes on Frequently Queried Columns
+- Add indexes on foreign keys (`customer_id`, `product_id`)
+- Use EXPLAIN to see performance before and after
 
-Get the latest order of each customer.
+### ✅ 3. Design ER Model (Optional Drawing Exercise)
+- Identify entities (Customer, Product, Order)
+- Draw relationships (1:N, N:M)
 
+---
 
--- 1. Total quantity of each product ordered (sorted by highest):
-
-SELECT 
-    p.product_name,
-    SUM(oi.quantity) AS total_quantity
-FROM order_items oi
-JOIN products p ON oi.product_id = p.product_id
-GROUP BY p.product_name
-ORDER BY total_quantity DESC;
-
-
---  2. Show list of customers with their total amount spent
-SELECT 
-    CONCAT(c.first_name, ' ', c.last_name) AS customer_name,
-    SUM(o.amount) AS total_spent
-FROM customers c
-JOIN orders o ON c.customer_id = o.customer_id
-GROUP BY customer_name
-ORDER BY total_spent DESC;
-
-
---  3. Show all products that have never been ordered
-SELECT p.product_name
-FROM products p
-LEFT JOIN order_items oi ON p.product_id = oi.product_id
-WHERE oi.order_item_id IS NULL;
-
---  4. Get the latest order of each customer
-SELECT 
-    c.customer_id,
-    CONCAT(c.first_name, ' ', c.last_name) AS customer_name,
-    MAX(o.order_date) AS latest_order_date
-FROM customers c
-JOIN  orders o ON c.customer_id = o.customer_id
-GROUP BY  c.customer_id, customer_name;
+🎯 Bonus:
+- Compare query performance with and without indexes
+- Explore surrogate vs natural keys in your schema
