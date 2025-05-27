@@ -45,7 +45,6 @@ Each day has:
 ---
 
 ## 🤝 Connect with Me
-## 🤝 Connect with Me
 
 - [LinkedIn – Manish Kumar Prajapat](https://www.linkedin.com/in/manish-kumar-prajapat-248757282)
 
