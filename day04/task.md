@@ -1,9 +1,22 @@
-Write a query to find customers who ordered more than the average order amount
+# 📘 Day 4 Tasks: Subqueries & Set Operations
 
-Show the top 3 customers by total amount spent using a derived table
+### ✅ 1. Find customers who placed orders above average order amount
+- Use a subquery in WHERE clause
+- Compare against AVG(amount) from orders
 
-List all orders where the order amount is greater than that customer's average order amount (correlated subquery)
+### ✅ 2. Get customer total purchase using subquery in FROM clause
+- Aggregate orders by customer_id
+- Join with customers
 
-Write a query to find first names that appear in both customers and a derived list of customers who ordered "Tablet"
+### ✅ 3. Use UNION to combine customer IDs from two different years
+- Use customers_2023 and customers_2024
+- Remove duplicates
 
-Use a derived table to find the total orders and amount for each user, then filter for those who placed at least 2 orders
+### ✅ 4. Show total number of orders per customer using subquery in SELECT
+- Subquery should count orders for each customer_id
+
+---
+
+🎯 Bonus:
+- Rewrite one of your subqueries using a JOIN instead
+- Use UNION ALL instead of UNION and observe the difference
