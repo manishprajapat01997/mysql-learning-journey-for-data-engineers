@@ -3,12 +3,17 @@
 #💡 Common Window Functions:
 --
 -Function - 	Description
--ROW_NUMBER()	 -Assigns a unique sequential number per partition
--RANK()	- Ranks rows with same value with gaps
--DENSE_RANK()	- Ranks rows with same value without gaps
--NTILE(n) -	Divides rows into equal buckets (quantiles)
--SUM() - OVER()	Running total
--AVG() - OVER()	Running average
+-ROW_NUMBER()	 Assigns a unique sequential number per partition
+
+-RANK()	 Ranks rows with same value with gaps
+
+-DENSE_RANK()	 Ranks rows with same value without gaps
+
+-NTILE(n) 	Divides rows into equal buckets (quantiles)
+
+-SUM()  OVER()	Running total
+
+-AVG()  OVER()	Running average
 
 
 
